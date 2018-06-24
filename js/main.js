@@ -3,4 +3,5 @@ $(document).ready(function(){
 	$.get("https://mhw-app-article.mhwco.org/list/list.txt",function(data,status){
 		list=data.split("\n");
 	});
+	$("#content").append("
 })
