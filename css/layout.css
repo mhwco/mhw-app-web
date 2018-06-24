@@ -10,7 +10,8 @@
 .card {
 	border:solid #777 1px;
 	box-shadow:0 0 6px;
-	transition:box-shadow 0.2s,background-color 0.2s;
+	border-radius:4px;
+	transition:box-shadow 0.2s,background-color 0.2s,border-radius 0.2s;
 }
 
 .card:active {
@@ -21,4 +22,13 @@
 .article-img {
 	background-color:#eee;
 	width:100%;
+	border-radius:4px;
+}
+
+.article-title {
+	font-size:20px;
+}
+
+.article-detail {
+	color:#777;
 }
