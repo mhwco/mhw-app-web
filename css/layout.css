@@ -36,9 +36,16 @@
 .title-bar {
 	height:40px;
 	border-bottom:solid #777 1px;
+	display:flex;
+	align-items:center;
 }
 
 .avator {
 	width:32px;
 	height:32px;
+}
+
+.date {
+	color:#777;
+	padding-left:1em;
 }
