@@ -32,3 +32,8 @@
 .article-detail {
 	color:#777;
 }
+
+.title-bar {
+	height:40px;
+	border-bottom:solid #777 1px;
+}
