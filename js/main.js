@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function(){
 	/*
 	var list;
@@ -13,3 +14,5 @@ $(document).ready(function(){
 		autoplaySpeed: 2000, 
 	});
 })
+=======
+>>>>>>> branch 'master' of https://github.com/mhwco/mhw-app-web.git
