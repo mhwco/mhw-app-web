@@ -1,10 +1,14 @@
+body {
+	margin:0
+}
+
 .full-section {
 	width:100%;
 	background-color:#eee;
 }
 
 .content-section {
-	
+	margin:8px;
 }
 
 .card {
@@ -23,6 +27,11 @@
 	background-color:#eee;
 	width:100%;
 	border-radius:4px;
+}
+
+.slide-img {
+	background:#eee;
+	width:100%;
 }
 
 .article-title {
