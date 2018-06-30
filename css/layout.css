@@ -4,7 +4,13 @@ body {
 
 .full-section {
 	width:100%;
-	background-color:#eee;
+	background:#444;
+	box-shadow:0 0 15px;
+	/*transition:box-shadow 0.1s;*/
+}
+
+.full-section:active {
+	box-shadow:0 0 5px;
 }
 
 .content-section {
@@ -15,7 +21,7 @@ body {
 	border:solid #777 1px;
 	box-shadow:0 0 6px;
 	border-radius:4px;
-	/*transition:box-shadow 0.1s,background-color 0.1s,border-radius 0.1s;*/
+	transition:box-shadow 0.1s/*,background-color 0.1s,border-radius 0.1s;*/
 }
 
 .card:active {
@@ -57,4 +63,10 @@ body {
 .date {
 	color:#777;
 	padding-left:1em;
+}
+
+.slide-title {
+	width:100%;
+	background:#444;
+	color:#fff;
 }

@@ -4,10 +4,4 @@ $(document).ready(function(){
 		list=data.split("\n");
 	});
 	$("#content").append("");
-	$('#top').slick({ 
-		slidesToShow: 1, 
-		slidesToScroll: 1, 
-		autoplay: true, 
-		autoplaySpeed: 2000,
-	});
 })
