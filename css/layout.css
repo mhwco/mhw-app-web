@@ -9,9 +9,9 @@ body {
 	/*transition:box-shadow 0.1s;*/
 }
 
-.full-section:active {
+/*.full-section:active {
 	box-shadow:0 0 5px;
-}
+}*/
 
 .content-section {
 	margin:8px;
