@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	var list;
+	var liststr;
 	$.get("https://mhw-app-article.mhwco.org/list/list.txt",function(data,status){
-		list=data.split("\n");
+		liststr=data;
 	});
-	$("#content").append("");
+	var list=liststr.split("\n");
 })
