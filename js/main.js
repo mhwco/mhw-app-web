@@ -1,7 +1,13 @@
 $(document).ready(function(){
-	var liststr;
+	var pos = 0;
 	$.get("https://mhw-app-article.mhwco.org/list/list.txt",function(data,status){
-		liststr=data;
+		var list=data.split("\r\n");
+		if(list.length<=20){
+			for(var i=0;i<list.length;i++){
+				var x=list[i];
+				$("#t").load("https://mhw-app-article.mhwco.org/article/"+x+"/manifest.json");
+				
+			}
+		}
 	});
-	var list=liststr.split("\n");
 })
