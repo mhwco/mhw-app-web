@@ -3,8 +3,8 @@ function addcard(title,detail,img,author,avator,date){
 	"use strict";
 	$("#content").append('<div class="card"><div class="title-bar"><img class="avator" alt="作者头像" src="'+avator+'"/><span class="author">'+author+'</span><span class="date">'+date+'</span></div><img class="article-img" alt="我是文章缩略图" src="'+img+'"/><h2 class="article-title">'+title+'</h2><div class="article-detail">'+detail+'</div></div>');
 }
-function jsonParse(path){//issue:奇怪地不能用get
-	$.getJSON(path,function(mf,status){
+function jsonParse(path){//向文章列表增加卡片
+	$.get(path,function(mf,status){
 		addcard(mf.title,mf.detail,mf.image,mf.author,mf.avator,mf.date);
 	});
 }
