@@ -5,12 +5,13 @@ function addcard(title,detail,img,author,avator,date){
 }
 function jsonParse(path){//向文章列表增加卡片
 	$.get(path,function(mf,status){
-		addcard(mf.title,mf.detail,mf.image,mf.author,mf.avator,mf.date);
+		addcard(mf.title,mf.detail,mf.image,mf.author,atsroot+"avatar/"+mf.author+".png",mf.date);
 	});
 }
 function jsonMapping(liststring){//分割list字符串并分别get
 	var list=liststring.split("\r\n");
-	for(var i=0;i<list.length;i++){
+	var t=list.length<3?list.length:3;
+	for(var i=0;i<t;i++){
 		var x=list[i];
 		jsonParse(atsroot+"article/"+x+"/manifest.json");
 	}
